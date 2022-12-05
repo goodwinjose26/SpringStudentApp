@@ -10,5 +10,12 @@ public class StudentController {
 {
     return "welcome";
 }
+
+@GetMapping("/content")
+    public String contentpage()
+{
+    return  "welcome to contentpage";
+}
+
 }
 
