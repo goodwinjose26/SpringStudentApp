@@ -12,9 +12,9 @@ public class StudentController {
 }
 
 @GetMapping("/content")
-    public String contentpage()
+    public String contactpage()
 {
-    return  "welcome to contentpage";
+    return  "welcome to contactpage";
 }
 
 }
