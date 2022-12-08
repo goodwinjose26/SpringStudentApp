@@ -36,6 +36,13 @@ public class StudentController {
         return (List<Students>) dao.searchStudent(s.getAdmno());
     }
 
+    @CrossOrigin(origins = "*")
+    @GetMapping("/view")
+    public List<Students> view()
+    {
+        return (List<Students>) dao.findAll();
+    }
+
 
 
 }
