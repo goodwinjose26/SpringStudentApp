@@ -15,11 +15,12 @@ public class StudentController {
     return "welcome";
 }
 
-@CrossOrigin()
+@CrossOrigin(origins = "*")
 @PostMapping(path="/add",consumes = "application/json", produces = "application/json")
     public String add(@RequestBody Students s)
 {
     System.out.println(s.toString());
+    dao.save(p);
     return  "student details added successfully";
 }
 
